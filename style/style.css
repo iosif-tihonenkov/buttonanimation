@@ -1,3 +1,17 @@
 .blue {
     background-color: blue;
 }
+
+#button_one {
+    width: 200px;
+    height: 100px;
+}
+
+body {
+    display: flex;
+}
+
+body section {
+    margin-left: 200px;
+}
+
