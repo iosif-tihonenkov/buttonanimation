@@ -3,6 +3,7 @@ function rewrite() {
     document.getElementById("button_one").style.color = '';
     document.getElementById("button_one").style.width = "100px";
     document.getElementById("button_one").style.height = "100px";
+    document.getElementById("button_one").textContent = '';
 }
 
 function colorBackground() {
@@ -27,4 +28,11 @@ function height() {
     let height = document.querySelector("input[name='height']").value;
     document.getElementById("button_one").style.height = height + 'px';
     document.querySelector("input[name='height']").value = '';
+}
+
+function content() {
+    let content = document.querySelector("input[name='content']").value;
+    document.getElementById("button_one").textContent = content;
+    document.querySelector("input[name='content']").value = '';
+    
 }
