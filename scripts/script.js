@@ -1,9 +1,11 @@
-let color = document.querySelector("input[name='color']").value;
 
-function color() {
-    document.getElementById("button_one").classList.add(colorValue);
+
+function colorBackground() {
+    let color123 = document.querySelector("input[name='colorBackground']").value;
+    document.getElementById("button_one").style.backgroundColor = color123;
+    document.querySelector("input[name='colorBackground']").value = '';
 }
 
 function rewrite() {
-    document.getElementById("button_one").className = "button_name";
+    document.getElementById("button_one").style.backgroundColor = '';
 }
