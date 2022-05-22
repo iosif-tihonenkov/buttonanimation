@@ -53,6 +53,11 @@ function fontFamily() {
     document.getElementById("button_one").style.fontFamily = fontFamily;
 }
 
+function fontSize() {
+    let fontSize = document.querySelector("input[name='fontSize']").value;
+    document.getElementById("button_one").style.fontSize = fontSize + 'px';
+}
+
 function onInputWidth() {
     let rng = document.querySelector("input[name='width']");
     let p = document.getElementById("valueInput__width");
@@ -68,5 +73,11 @@ function onInputHeight() {
 function onInputCircle() {
     let rng = document.querySelector("input[name='circle']");
     let p = document.getElementById("valueInput__circle");
+    p.innerHTML=rng.value;
+}
+
+function onInputFontSize() {
+    let rng = document.querySelector("input[name='fontSize']");
+    let p = document.getElementById("valueInput__fontSize");
     p.innerHTML=rng.value;
 }

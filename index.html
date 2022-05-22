@@ -73,6 +73,13 @@
                     </select>
                     <button onclick="fontFamily()">Поменять шрифт</button> 
                 </div>
+                <div class="sizeSelect__item">
+                    <div class="sizeSelect__itemInput">
+                        <input type="range" min="1" max="100" step="1" name="fontSize" oninput="onInputFontSize()">
+                        <p id="valueInput__fontSize"></p>
+                    </div>
+                    <button onclick="fontSize()">Поменять размер текста</button>
+                </div>
            </div>
            <div class="rewrite">
                 <button onclick="rewrite()">Сбросить</button>
