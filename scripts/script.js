@@ -48,6 +48,11 @@ function circle() {
     document.getElementById("heightCode").textContent = "height: " + height + ";";
 }
 
+function fontFamily() {
+    let fontFamily = document.querySelector("select[name='contentFontFamily']").value;
+    document.getElementById("button_one").style.fontFamily = fontFamily;
+}
+
 function onInputWidth() {
     let rng = document.querySelector("input[name='width']");
     let p = document.getElementById("valueInput__width");
