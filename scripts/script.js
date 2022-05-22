@@ -1,8 +1,8 @@
 function rewrite() {
     document.getElementById("button_one").style.backgroundColor = '';
     document.getElementById("button_one").style.color = '';
-    document.getElementById("button_one").style.width = "100px";
-    document.getElementById("button_one").style.height = "100px";
+    document.getElementById("button_one").style.width = '';
+    document.getElementById("button_one").style.height = '';
     document.getElementById("button_one").textContent = '';
     document.getElementById("colorBackgroundCode").textContent = '';
     document.getElementById("colorTextCode").textContent = '';
@@ -44,4 +44,16 @@ function content() {
     document.getElementById("button_one").textContent = content;
     document.querySelector("input[name='content']").value = '';
     
+}
+
+function onInputWidth() {
+    let rng = document.querySelector("input[name='width']");
+    let p = document.getElementById("valueInput__width");
+    p.innerHTML=rng.value;
+}
+
+function onInputHeight() {
+    let rng = document.querySelector("input[name='height']");
+    let p = document.getElementById("valueInput__height");
+    p.innerHTML=rng.value;
 }

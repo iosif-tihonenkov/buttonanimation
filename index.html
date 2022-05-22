@@ -12,32 +12,53 @@
     <header><h1>Генератор кнопок</h1></header>
     <section class="work-area">
         <section class="left-sidebar">
-            <div>
-                <h2>Цвета:</h2>
-                <input type="text" name="colorBackground" placeholder="Введите цвет (на английском)">
-                <button onclick="colorBackground()">Поменять цвет фона</button>
-            </div>
-            <div>
-                <input type="text" name="colorText" placeholder="Введите цвет (на английском)">
-                <button onclick="colorText()">Поменять цвет текста</button>
-            </div>
-            <div>
-                <h2>Размеры:</h2>
-                <input type="text" name="width" placeholder="Введите ширину">
-                <button onclick="width()">Поменять ширину кнопки</button>
-            </div>
-            <div>
-                <input type="text" name="height" placeholder="Введите высоту">
-                <button onclick="height()">Поменять высоту кнопки</button>
-            </div>
-            <div>
-                <input type="text" name="content" placeholder="Введите текст">
-                <button onclick="content()">Поменять текст кнопки</button>
-            </div>
-            <button onclick="rewrite()">Сбросить</button>
+           <div class="colorSelect">
+                <h2>Выбор цвета:</h2>
+                <div class="colorSelect__item">
+                    <input type="color" name="colorBackground" placeholder="Введите цвет (на английском)">
+                    <button onclick="colorBackground()">Поменять цвет фона</button>
+                </div>
+                <div class="colorSelect__item">
+                    <input type="color" name="colorText" placeholder="Введите цвет (на английском)">
+                    <button onclick="colorText()">Поменять цвет текста</button>
+                </div>
+           </div>
+           <div class="sizeSelect">
+                <h2>Размер кнопки:</h2>
+                <div class="sizeSelect__item">
+                    <div class="sizeSelect__item__input">
+                        <input type="range" min="0" max="500" step="1" name="width" oninput="onInputWidth()" placeholder="Введите ширину">
+                        <p id="valueInput__width"></p>
+                    </div>
+                    <button onclick="width()">Поменять ширину кнопки</button>
+                </div>
+                <div class="sizeSelect__item">
+                    <div class="sizeSelect__item__input">
+                        <input type="range" min="0" max="500" step="1" name="height" oninput="onInputHeight()" placeholder="Введите ширину">
+                        <p id="valueInput__height"></p>
+                    </div>
+                    <button onclick="width()">Поменять высоту кнопки</button>
+                </div>
+           </div>
+           <div class="contenSelect">
+                <div class="contentSelect__item">
+                    <input type="text" name="content" placeholder="Введите текст">
+                    <button onclick="content()">Поменять текст кнопки</button> 
+                </div>
+           </div>
+           <div class="rewrite">
+                <button onclick="rewrite()">Сбросить</button>
+           </div>
         </section>
-        <button class="button_one" id="button_one"></button>
-        <section class="right-sidebar"></section>
+        <section class="center-bar">
+            <button class="button_one" id="button_one"></button>
+        </section>
+        <section class="right-sidebar">
+            <h2>HTML код:</h2>
+            <code></code>
+            <h2>CSS код:</h2>
+            <code></code>
+        </section>
     </section>
 </body>
 </html>

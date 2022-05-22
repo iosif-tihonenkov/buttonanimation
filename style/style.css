@@ -1,10 +1,32 @@
 #button_one {
-    width: 200px;
-    height: 100px;
+    width: 0;
+    height: 0;
+}
+
+.left-sidebar button,
+.left-sidebar input {
+    width: 48%;   
+    border: 2px solid #3F92D2;
+}
+
+.left-sidebar input {
+    height: 45px;
+    background-color: rgb(189, 223, 253);
+}
+
+.left-sidebar button {
+    height: 49px;
+    background-color: white;
+}
+
+.rewrite {
+    margin-top: 50px;
+    width: 98% !important;
 }
 
 .work-area {
     display: flex;
+    flex-wrap: wrap;
 }
 
 header {
@@ -28,12 +50,17 @@ h1 {
     width: 30%;
     border: 1px solid black;
     padding: 30px;
-}
-
-.left-sidebar input { 
-    margin-right: 30px;
+    text-align: center;
 }
 
 .left-sidebar div {
     margin-top: 10px;
+}
+
+.center-bar {
+    width: 50%;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: auto;
+    margin-bottom: auto;
 }
