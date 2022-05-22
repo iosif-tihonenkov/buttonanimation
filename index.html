@@ -9,38 +9,35 @@
     <script src="scripts/script.js"></script>
 </head>
 <body>
-    <button class="button_one" id="button_one"></button>
-    <section>
-        <div>
-            <input type="text" name="colorBackground" placeholder="Введите цвет (на английском)">
-            <button onclick="colorBackground()">Поменять цвет фона</button>
-        </div>
-        <div>
-            <input type="text" name="colorText" placeholder="Введите цвет (на английском)">
-            <button onclick="colorText()">Поменять цвет текста</button>
-        </div>
-        <div>
-            <input type="text" name="width" placeholder="Введите ширину">
-            <button onclick="width()">Поменять ширину кнопки</button>
-        </div>
-        <div>
-            <input type="text" name="height" placeholder="Введите высоту">
-            <button onclick="height()">Поменять высоту кнопки</button>
-        </div>
-        <div>
-            <input type="text" name="content" placeholder="Введите текст">
-            <button onclick="content()">Поменять текст кнопки</button>
-        </div>
-        <button onclick="rewrite()">Сбросить</button>
+    <header><h1>Генератор кнопок</h1></header>
+    <section class="work-area">
+        <section class="left-sidebar">
+            <div>
+                <h2>Цвета:</h2>
+                <input type="text" name="colorBackground" placeholder="Введите цвет (на английском)">
+                <button onclick="colorBackground()">Поменять цвет фона</button>
+            </div>
+            <div>
+                <input type="text" name="colorText" placeholder="Введите цвет (на английском)">
+                <button onclick="colorText()">Поменять цвет текста</button>
+            </div>
+            <div>
+                <h2>Размеры:</h2>
+                <input type="text" name="width" placeholder="Введите ширину">
+                <button onclick="width()">Поменять ширину кнопки</button>
+            </div>
+            <div>
+                <input type="text" name="height" placeholder="Введите высоту">
+                <button onclick="height()">Поменять высоту кнопки</button>
+            </div>
+            <div>
+                <input type="text" name="content" placeholder="Введите текст">
+                <button onclick="content()">Поменять текст кнопки</button>
+            </div>
+            <button onclick="rewrite()">Сбросить</button>
+        </section>
+        <button class="button_one" id="button_one"></button>
+        <section class="right-sidebar"></section>
     </section>
-    <code id="code">
-        .button { </br>
-            <code id="colorBackgroundCode"></code></br>
-            <code id="colorTextCode"></code></br>
-            <code id="widthCode"></code></br>
-            <code id="heightCode"></code></br>
-            <code id="contentCode"></code></br>
-        }
-    </code>
 </body>
 </html>

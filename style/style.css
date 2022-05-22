@@ -3,11 +3,37 @@
     height: 100px;
 }
 
-body {
+.work-area {
     display: flex;
 }
 
-body section {
-    margin-left: 200px;
+header {
+    background-color: #3F92D2;
 }
 
+body,
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    line-height: 50px;
+}
+
+.left-sidebar {
+    width: 30%;
+    border: 1px solid black;
+    padding: 30px;
+}
+
+.left-sidebar input { 
+    margin-right: 30px;
+}
+
+.left-sidebar div {
+    margin-top: 10px;
+}
