@@ -1,0 +1,14 @@
+.sizeSelect__itemInput {
+    width: 48%
+}
+
+.sizeSelect__itemInput input {
+    width: 100%;
+}
+
+input {
+    width: 48%;
+    height: 40px;
+    border: 3px solid rgb(42, 121, 158);
+    background-color: rgb(244, 248, 250);
+}

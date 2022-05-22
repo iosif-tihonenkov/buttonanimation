@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Button animate</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/button.css">
+    <link rel="stylesheet" href="style/input.css">
     <script src="scripts/script.js"></script>
 </head>
 <body>
@@ -26,18 +28,18 @@
            <div class="sizeSelect">
                 <h2>Размер кнопки:</h2>
                 <div class="sizeSelect__item">
-                    <div class="sizeSelect__item__input">
+                    <div class="sizeSelect__itemInput">
                         <input type="range" min="0" max="500" step="1" name="width" oninput="onInputWidth()" placeholder="Введите ширину">
                         <p id="valueInput__width"></p>
                     </div>
                     <button onclick="width()">Поменять ширину кнопки</button>
                 </div>
                 <div class="sizeSelect__item">
-                    <div class="sizeSelect__item__input">
+                    <div class="sizeSelect__itemInput">
                         <input type="range" min="0" max="500" step="1" name="height" oninput="onInputHeight()" placeholder="Введите ширину">
                         <p id="valueInput__height"></p>
                     </div>
-                    <button onclick="width()">Поменять высоту кнопки</button>
+                    <button onclick="height()">Поменять высоту кнопки</button>
                 </div>
            </div>
            <div class="contenSelect">
