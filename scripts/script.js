@@ -81,3 +81,27 @@ function onInputFontSize() {
     let p = document.getElementById("valueInput__fontSize");
     p.innerHTML=rng.value;
 }
+
+function test() {
+    let elem = document.getElementById("button_one");
+    let backgroundColor = window.getComputedStyle(elem).backgroundColor;
+    let contentColor = window.getComputedStyle(elem).color;
+    let buttonWidth = window.getComputedStyle(elem).width;
+    let buttonHeight = window.getComputedStyle(elem).height;
+    let buttonBorderRadius = window.getComputedStyle(elem).borderRadius;
+    let buttonFontFamily = window.getComputedStyle(elem).fontFamily;
+    let buttonFontSize = window.getComputedStyle(elem).fontSize;
+    let cssCode = `button {
+    background-color: ${backgroundColor};
+    color: ${contentColor};
+    width: ${buttonWidth};
+    height: ${buttonHeight};
+    border-radius: ${buttonBorderRadius};
+    font-family: ${buttonFontFamily};
+    font-size: ${buttonFontSize};
+}`;
+    let content = document.getElementById("button_one").textContent;
+    let htmlCode = `<button>${content}</button>`;
+    document.getElementById("cssCodeContent").textContent = cssCode;
+    document.getElementById("htmlCodeContent").textContent = htmlCode;
+}
