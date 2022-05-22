@@ -42,6 +42,12 @@ function content() {
     
 }
 
+function circle() {
+    let circle = document.querySelector("input[name='circle']").value;
+    document.getElementById("button_one").style.borderRadius = circle + 'px';
+    document.getElementById("heightCode").textContent = "height: " + height + ";";
+}
+
 function onInputWidth() {
     let rng = document.querySelector("input[name='width']");
     let p = document.getElementById("valueInput__width");
@@ -51,5 +57,11 @@ function onInputWidth() {
 function onInputHeight() {
     let rng = document.querySelector("input[name='height']");
     let p = document.getElementById("valueInput__height");
+    p.innerHTML=rng.value;
+}
+
+function onInputCircle() {
+    let rng = document.querySelector("input[name='circle']");
+    let p = document.getElementById("valueInput__circle");
     p.innerHTML=rng.value;
 }

@@ -36,13 +36,21 @@
                 </div>
                 <div class="sizeSelect__item">
                     <div class="sizeSelect__itemInput">
-                        <input type="range" min="0" max="500" step="1" name="height" oninput="onInputHeight()" placeholder="Введите ширину">
+                        <input type="range" min="0" max="500" step="1" name="height" oninput="onInputHeight()">
                         <p id="valueInput__height"></p>
                     </div>
                     <button onclick="height()">Поменять высоту кнопки</button>
                 </div>
+                <div class="sizeSelect__item">
+                    <div class="sizeSelect__itemInput">
+                        <input type="range" min="0" max="250" step="1" name="circle" oninput="onInputCircle()">
+                        <p id="valueInput__circle"></p>
+                    </div>
+                    <button onclick="circle()">Поменять скругление кнопки</button>
+                </div>
            </div>
            <div class="contenSelect">
+               <h2>Контент:</h2>
                 <div class="contentSelect__item">
                     <input type="text" name="content" placeholder="Введите текст">
                     <button onclick="content()">Поменять текст кнопки</button> 
